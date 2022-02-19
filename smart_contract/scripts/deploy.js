@@ -3,8 +3,8 @@ const hre = require('hardhat');
 
 const main = async () => {
   // We get the contract to deploy
-  const Transaction = await hre.ethers.getContractFactory('Transaction');
-  const transaction = await Transaction.deploy('Hello, Hardhat!');
+  const Transaction = await hre.ethers.getContractFactory('Transactions');
+  const transaction = await Transaction.deploy();
 
   await transaction.deployed();
 
